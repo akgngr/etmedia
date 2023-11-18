@@ -1,0 +1,14 @@
+title: Description
+fields:
+  -
+    handle: textarea_field
+    field:
+      antlers: false
+      type: textarea
+      display: 'Textarea Field'
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

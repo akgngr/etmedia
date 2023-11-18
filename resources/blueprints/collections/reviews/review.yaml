@@ -1,0 +1,111 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              validate:
+                - required
+              display: 'Full Name'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: say
+            field:
+              type: markdown
+              localizable: true
+              display: 'What did he/she say'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              restrict: false
+              buttons:
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - link
+                - image
+                - table
+              automatic_line_breaks: true
+              automatic_links: false
+              escape_markup: false
+              heading_anchors: false
+              smartypants: false
+              table_of_contents: false
+              antlers: false
+              hide_display: false
+          -
+            handle: image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: Image
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: job
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Job
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: compny
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Compny
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - reviews
+              max_items: 1
+              listable: false
+              localizable: true
+title: Review

@@ -1,0 +1,52 @@
+<footer class="bg-black text-white">
+    <div class="container mx-auto pt-32">
+        <a href="/" title="et media home"><img class="h-12" src="{{ footer:logo:0 }}" alt="Et Media"></a>
+    </div>
+    <div class="container mx-auto pt-24 pb-24 px-4 grid grid-cols-1 md:grid-cols-3">
+        <div>
+            <ul class="text-4xl leading-relaxed">
+                {{ nav:footer_navigation }}
+                    <li><a class="hover:text-red-700 ease-in duration-300" href="{{ url }}">{{ title }}</a></li>
+                {{ /nav:footer_navigation }}
+            </ul>
+        </div>
+        <div>
+
+            <div class="flex flex-col relative h-full justify-start">
+                <div>
+                    <span>Follow us</span>
+                    <div class="pt-8 flex gap-4">
+                        <a href="{{footer:socials_links:fb}}">
+                            <img src="/assets/facebook.svg" />
+                        </a>
+                        <a href="{{footer:socials_links:insta}}">
+                            <img src="/assets/instagram.svg" />
+                        </a>
+                        <a href="{{footer:socials_links:tiktok}}">
+                            <img src="/assets/twitter.svg" />
+                        </a>
+                        <a href="{{footer:socials_links:youtube}}">
+                            <img src="/assets/youtube.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-20">
+                    {{footer:address}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="pb-8">Contact info</p>
+            <p>{{footer:phone}}</p>
+            <p>{{footer:e-mail}}</p>
+        </div>
+    </div>
+    <div class="container mx-auto flex justify-between py-8 text-sm text-gray-300 border-t-[0.02rem] border-gray-700">
+        <div>Copyright © 2023 Pixlab. All Rights Reserved.</div>
+        <div>
+            <a class="hover:text-red-700 ease-in duration-300" href="#">Privacy Policy</a>
+            <a class="hover:text-red-700 ease-in duration-300" href="#">Terms & Conditions</a>
+        </div>
+        <div>Designed by Nixar. Powered by akgngr.</div>
+    </div>
+</footer>

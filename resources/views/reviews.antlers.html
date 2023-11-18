@@ -1,0 +1,35 @@
+<section class="mt-12 mb-20">
+    <div class="container mx-auto px-5">
+        {{ collection from="reviews" paginate="5" as="review" }} {{ if
+        no_results }}
+        <div
+            class="container mx-auto bg-yellow-600 text-gray-500 text-xl flex items-center"
+        >
+            <p>Aww, there are no results.</p>
+        </div>
+        {{ /if }} {{ review }}
+
+        <article class="flex gap-14 items-center my-16 flex-wrap-reverse md:flex-nowrap">
+            <div class="w-full md:max-w-[75%]">
+                <div class="text-2xl leading-9">{{ say }}</div>
+                <div class="mt-12">
+                    <p>{{ name }}</p>
+                    <p>{{ job }}, {{ compny }}</p>
+                </div>
+            </div>
+            <div  class="w-full md:max-w-[30%]">
+                <img src="{{ image:0}}" alt="{{image:alt}}" />
+            </div>
+        </article>
+        {{ /review }} {{ paginate }} {{ if current_page !== 1 }}
+        <a class="font-serif border border-gray-300 rounded-full py-3 px-6 inline-block" href="{{ prev_page }}">⬅ Previous</a>
+        {{ /if}}
+
+        <a
+            class="font-serif border border-gray-300 rounded-full py-3 px-6 inline-block"
+            href="{{ next_page }}"
+            >Next
+        </a>
+        {{ /paginate }} {{ /collection }}
+    </div>
+</section>

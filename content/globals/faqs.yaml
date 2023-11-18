@@ -1,0 +1,33 @@
+title: "Faq's"
+data:
+  title: 'Frequently Asked Questions'
+  image: faq.jpeg
+  ask:
+    -
+      id: lp41srt9
+      title: 'What services does Pixlab offer?'
+      body: 'From web and app development, ensuring responsive and seamless user experiences, to digital marketing strategies spanning social media, search engines, email, and content, Pixlab drives brand awareness and engagement.'
+    -
+      id: lp41t6ai
+      title: 'How long does it take to complete a web development project?'
+      body: "The timeline for a web development project varies based on its complexity and your specific requirements. We'll provide you with a project timeline during our initial consultation."
+    -
+      id: lp41tj2a
+      title: 'Can you help with social media marketing?'
+      body: 'Absolutely! Pixlab offers comprehensive social media marketing services designed to boost your online presence and engage your target audience effectively. With expertise across various platforms, including Facebook, Instagram, Twitter, and LinkedIn.'
+    -
+      id: lp41tv4i
+      title: 'How can I get a quote for my project?'
+      body: 'Getting a quote for your project is straightforward with Pixlab. Simply navigate to our "Get a Quote" page and fill out the provided form with essential details about your project scope, requirements, and any specific preferences you have in mind.'
+    -
+      id: lp41u5tp
+      title: 'Do you provide ongoing support after a project is completed?'
+      body: 'Certainly! At Pixlab, our commitment to client satisfaction extends beyond project completion. We offer comprehensive ongoing support to ensure your continued success. Whether you have questions, need technical assistance.'
+    -
+      id: lp41ulhz
+      title: 'How can I schedule a consultation with your team?'
+      body: 'Scheduling a consultation with our team at Pixlab is simple and convenient. Visit our "Contact Us" page on the website, where you''ll find various contact options.'
+    -
+      id: lp41v1r6
+      title: 'What payment methods do you accept?'
+      body: 'Pixlab accepts a variety of payment methods to provide flexibility for our clients. We currently accept payments through major credit and debit cards, including Visa, Mastercard, American Express, and Discover.'

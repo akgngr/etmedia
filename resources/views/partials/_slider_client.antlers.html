@@ -1,0 +1,68 @@
+{{ section:head}}
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <style>
+
+        .main-carousel .previous{
+            bottom: 0;
+            right: 100px;
+            left: auto !important;
+            top: auto !important;
+            background:transparent !important;
+            border-radius:0 !important;
+            transform: translateY(-20%);
+        }
+        .main-carousel .next{
+            bottom: 0;
+            right: 10px;
+            left: auto !important;
+            top: auto !important;
+            background:transparent !important;
+            border-radius:0 !important;
+            transform: translateY(-20%);
+        }
+    </style>
+{{ /section:head}}
+<section class="container mx-auto px-5 relative bottom-0 py-24">
+    <div class="mb-10">
+        <div class="font-serif border border-gray-300 rounded-full py-1.5 px-3 text-xs inline-block mb-3 text-center">Testimonial</div>
+        <h2>What Our Clients Say</h2>
+    </div>
+    <div class="main-carousel">
+        {{ collection from="reviews" paginate="5" as="review" }}
+                {{ review }}
+                    <article class="carousel-cell flex gap-14 items-center my-16 flex-wrap-reverse md:flex-nowrap">
+                        <div class="w-full md:max-w-[75%]">
+                            <div class="text-2xl leading-9">{{ say }}</div>
+                            <div class="mt-12">
+                                <p>{{ name }}</p>
+                                <p>{{ job }}, {{ compny }}</p>
+                            </div>
+                        </div>
+                        <div  class="w-full md:max-w-[30%]">
+                            <img data-flickity-lazyload="{{ image:0}}" alt="{{image:alt}}" />
+                        </div>
+                    </article>
+                {{ /review }}
+        {{ /collection }}
+    </div>
+</section>
+<script>
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    pageDots: false,
+    autoPlay: true,
+    lazyLoad: 2
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+    // options
+    });
+</script>

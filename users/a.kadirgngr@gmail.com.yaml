@@ -1,0 +1,8 @@
+name: admin
+super: true
+id: ec4f2529-cfa4-41b6-bade-1458988a9f99
+password_hash: $2y$10$I.HazmzRHqb1X.cNJhUOoORsMsZLWUnN3k6zrvkYgMlKT8z3jXe6q
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

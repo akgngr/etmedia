@@ -1,0 +1,17 @@
+<header class="">
+    <div class="container mx-auto h-16 pb-18 px-4 flex justify-between items-center">
+        <div>
+            <a href="/" title="et media home"><img class="h-10" src="{{ footer:logo:0 }}" alt="Et Media"></a>
+        </div>
+        <div>
+            <ul class="flex gap-8 text-sm">
+                {{ nav:main_menu }}
+                    <li><a class="hover:text-red-700 ease-in duration-300" href="{{ url }}">{{ title }}</a></li>
+                {{ /nav:main_menu }}
+            </ul>
+        </div>
+        <div>
+            <a class="text-xs border border-gray-400 rounded-full py-3 px-6 hover:bg-gray-800 hover:text-gray-50 ease-in duration-300"" href="/kontakt">Reden wir</a>
+        </div>
+    </div>
+</header>

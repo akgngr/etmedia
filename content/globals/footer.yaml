@@ -1,0 +1,12 @@
+title: Footer
+data:
+  logo:
+    - et-media.png
+  socials_links:
+    fb: 'https://facebook.com/etmedia'
+    insta: 'https://instagram.com/etmedia'
+    tiktok: 'https://tiktok.com/@etmedia'
+    youtube: 'https://youtube.com/etmedia'
+  address: '10781 Berlin Germany'
+  phone: '+1 840 841 25 69'
+  e-mail: info@etmedia.com
