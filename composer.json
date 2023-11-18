@@ -70,7 +70,8 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan config:cache --ansi --force"
+            "@php artisan config:cache --ansi --force",
+            "chmod -R 777 bootstrap/cache"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
