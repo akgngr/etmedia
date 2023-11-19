@@ -40,7 +40,7 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
-
+$app->useStoragePath($app->basePath() . '/storage');
 /*
 |--------------------------------------------------------------------------
 | Return The Application

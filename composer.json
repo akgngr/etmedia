@@ -72,8 +72,8 @@
             "@php artisan key:generate --ansi",
             "@php artisan config:cache --ansi --force",
             "chmod -R 777 bootstrap/cache",
-            "php -r \"chmod('./bootstrap', -R 777);\"",
-            "php -r \"chmod('bootstrap', -R 777);\""
+            "php -r \"chmod('./bootstrap/cache', -R 777);\"",
+            "php -r \"chmod('bootstrap/cache', -R 777);\""
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
